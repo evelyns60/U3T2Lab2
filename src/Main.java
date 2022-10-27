@@ -44,7 +44,6 @@ public class Main
 
         // print CatHouse info
         System.out.println(cats);
-
         cats.rollCall();
 
         // HERE IS TEST CODE; UNCOMMENT WHEN YOU NEED IT!

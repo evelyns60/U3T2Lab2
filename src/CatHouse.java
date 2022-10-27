@@ -17,8 +17,17 @@ public class CatHouse
     // same age, then have cat1 go first
     public void rollCall()
     {
-        cat1.introduce();
-        cat2.introduce();
+        if ((cat1.getAge() > cat2.getAge()) || ((cat1.getAge() == cat2.getAge()) && (cat1.getName() == cat2.getName()))) {
+            cat1.introduce();
+            cat2.introduce();
+        } else if (cat1.getAge() < cat2.getAge()){
+            cat2.introduce();
+            cat1.introduce();
+        } else {
+            String cat1Letter = cat1.getName().substring(0, 1);
+            String cat2Letter = cat2.getName().substring(0, 1);
+            if (Character.compare())
+        }
     }
 
     // IMPLEMENT this method!
